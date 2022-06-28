@@ -1,6 +1,8 @@
 package kg.geektech.shopingapp.domain.entity
 
-data class ShopItem(
+import javax.inject.Inject
+
+data class ShopItem @Inject constructor(
     val name: String,
     var count: Int = COUNT_OF_ITEM,
     var enable: Boolean = ENABLE,
